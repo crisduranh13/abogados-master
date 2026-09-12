@@ -9,7 +9,7 @@ type Servicio = {
   texto: string;
   video: string;
   poster: string;
-  destacado?: boolean;
+  ancho?: string;
 };
 
 const servicios: Servicio[] = [
@@ -19,7 +19,7 @@ const servicios: Servicio[] = [
       "Asesoría y representación en despidos, liquidaciones, conflictos con patrones o colaboradores y cumplimiento de obligaciones laborales.",
     video: videos.reunion,
     poster: imagenes.heroFirma,
-    destacado: true,
+    ancho: "lg:col-span-2",
   },
   {
     titulo: "Derecho penal",
@@ -48,7 +48,6 @@ const servicios: Servicio[] = [
       "Acompañamiento continuo a empresas: gobierno interno, decisiones societarias y apoyo legal en operaciones del día a día.",
     video: videos.estrategia,
     poster: imagenes.salaJuntas,
-    destacado: true,
   },
   {
     titulo: "Contratos y prevención legal",
@@ -56,6 +55,7 @@ const servicios: Servicio[] = [
       "Elaboración y revisión de contratos para reducir riesgos antes de que se conviertan en conflictos costosos.",
     video: videos.documentos,
     poster: imagenes.firmaDocumentos,
+    ancho: "md:col-span-2 lg:col-span-3",
   },
 ];
 
@@ -81,7 +81,7 @@ export function Servicios() {
             <Reveal
               key={s.titulo}
               delay={(i % 3) * 90}
-              className={s.destacado ? "lg:col-span-2" : undefined}
+              className={s.ancho ?? ""}
             >
               <article className="group relative flex h-full min-h-[26rem] flex-col justify-end overflow-hidden rounded-sm bg-ink">
                 <BackgroundVideo src={s.video} poster={s.poster} overlay="strong" />
