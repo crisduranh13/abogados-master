@@ -68,7 +68,19 @@ export function Footer() {
       </div>
 
       <div className="shell flex flex-col gap-3 border-t border-border py-7 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} Higuera &amp; Fernández. Todos los derechos reservados.</p>
+        <div className="space-y-1">
+          <p>
+            © 2026 Demo Web hecho por Vende24Siete. Todos los derechos reservados. - Visita -{" "}
+            <a
+              href="https://vende24siete.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 transition-colors hover:text-ink"
+            >
+              Vende24Siete.com
+            </a>
+          </p>
+        </div>
         <div className="flex gap-6">
           <a href="#contacto" className="transition-colors hover:text-ink">
             Aviso de privacidad

@@ -9,11 +9,13 @@ const casos = [
   },
   {
     titulo: "Defensa y asesoría penal",
-    texto: "Acompañamiento técnico en cada etapa, con información clara sobre el estado del asunto.",
+    texto:
+      "Acompañamiento técnico en cada etapa, con información clara sobre el estado del asunto.",
   },
   {
     titulo: "Arrendamientos y controversias civiles",
-    texto: "Revisión de contratos, incumplimientos y soluciones para recuperar la certeza jurídica.",
+    texto:
+      "Revisión de contratos, incumplimientos y soluciones para recuperar la certeza jurídica.",
   },
   {
     titulo: "Elaboración y revisión de contratos",
@@ -26,10 +28,6 @@ const casos = [
   {
     titulo: "Cobranza y cumplimiento mercantil",
     texto: "Acciones para exigir el cumplimiento de obligaciones comerciales.",
-  },
-  {
-    titulo: "Estrategia preventiva para negocios",
-    texto: "Revisión legal periódica para anticipar riesgos antes de que escalen.",
   },
 ];
 

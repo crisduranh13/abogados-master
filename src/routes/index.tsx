@@ -101,8 +101,8 @@ function Inicio() {
         <Faq />
         <CtaFinal />
       </main>
-      <Footer />
       <Vende24Siete />
+      <Footer />
     </>
   );
 }

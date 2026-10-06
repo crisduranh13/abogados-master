@@ -55,6 +55,12 @@ export function Equipo() {
             </Reveal>
           ))}
         </div>
+        <Reveal className="mx-auto mt-12 max-w-3xl text-center text-lg leading-relaxed text-muted-foreground">
+          <p>
+            En tu Web integra a tu equipo y comparte sus experiencias, eso suma mucho a la
+            confianza. La mejor imagen para tu firma con nosotros.
+          </p>
+        </Reveal>
       </div>
     </section>
   );
